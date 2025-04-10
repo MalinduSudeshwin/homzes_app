@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'catalog3_screen.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class Catalog1Screen extends StatelessWidget {
+  final dbRef = FirebaseDatabase.instance.ref();
   List<Map<dynamic, dynamic>> featured = [];
   List<Map<dynamic, dynamic>> newOffers = [];
 
